@@ -6,11 +6,11 @@ require_once __DIR__ . '/Category.php';
  */
 
 class Product{
-    /** Product image URL */
+    /** Product image URL @var String*/
     protected $image; 
-    /** Product title  */
+    /** Product title @var String */
     protected $title; 
-    /** Product price */
+    /** Product price @var Number */
     protected $price; 
     /** Product category */
     protected $category; 
@@ -22,6 +22,21 @@ class Product{
         $this->category = $category;
     }
 
+    public function getImage(){
+        return $this->image;
+    }
+
+    public function getTitle(){
+        return $this->title;
+    }
+
+    public function getPrice(){
+        return $this->price;
+    }
+
+    public function getCategory(){
+        return $this->category;
+    }
 
 
 }
