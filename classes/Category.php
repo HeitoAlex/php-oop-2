@@ -1,6 +1,6 @@
 <?php 
 
-class Cat{
+class Category{
     protected $name;
     protected $icon;
 

@@ -1,20 +1,19 @@
 <?php 
-
-require_once __DIR__ . '/Dog.php';
-require_once __DIR__ . '/Cat.php';
-require_once __DIR__ . '/Bird.php';
-require_once __DIR__ . '/Fish.php';
-
+require_once __DIR__ . '/Category.php';
 
 /**
  * New class Product 
  */
 
 class Product{
-    protected $image;
-    protected $title;
-    protected $price;
-    protected $category;
+    /** Product image URL */
+    protected $image; 
+    /** Product title  */
+    protected $title; 
+    /** Product price */
+    protected $price; 
+    /** Product category */
+    protected $category; 
 
     public function __construct($image, $title, $price, Category $category){
         $this->image = $image;
