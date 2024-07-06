@@ -23,4 +23,3 @@ class Accessory extends Product{
         return $this->dimensions;
     }
 }
-}
