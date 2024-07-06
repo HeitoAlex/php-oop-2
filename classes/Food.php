@@ -1,5 +1,8 @@
 <?php 
 
+require_once __DIR__ . '/Product.php';
+require_once __DIR__ . '/Category.php';
+
 class Food extends Product{
     protected $weight;
     protected $ingredients;
