@@ -11,7 +11,8 @@ class Product{
     protected $image; 
     /** Product title @var String */
     protected $title; 
-    /** Product price @var Number */
+    /** Product price @var Float
+     */
     protected $price; 
     /** Product category */
     protected $category; 
@@ -22,6 +23,8 @@ class Product{
         $this->price = $price;
         $this->category = $category;
     }
+
+        // GETTER
 
     public function getImage(){
         return $this->image;
@@ -39,5 +42,21 @@ class Product{
         return $this->category;
     }
 
+        // SETTER
 
+    public function setImage($image){
+        $this->image = $image;
+    }
+
+    public function setTitle($title){
+        $this->title = $title;
+    }
+
+    public function setPrice($price){
+        $this->price = $price;
+    }
+
+    public function setCategory($category){
+        $this->category = $category;
+    }
 }

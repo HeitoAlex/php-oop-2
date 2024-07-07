@@ -22,4 +22,12 @@ class Food extends Product{
     public function getIngredients(){
         return $this->ingredients;
     }
+
+    public function setWeight($weight){
+        $this->weight = $weight;
+    }
+
+    public function setIngredients($ingredients){
+        $this->ingredients = $ingredients;
+    }
 }
